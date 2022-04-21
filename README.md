@@ -1,2 +1,1 @@
-
-0x00. MySQL advanced
+in this project there are different database storage releated tasks are their
