@@ -1,0 +1,2 @@
+//script that lists all documents with name
+db.school.findOne({name: "Holberton school"})
