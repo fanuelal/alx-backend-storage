@@ -7,7 +7,7 @@ def update_topics(mongo_collection, name, topics):
     """function that changes all topics of a school"""
     if name == '':
         return None
-    mongo_collection.update(
+    mongo_collection.update_many(
         {"name": name},
         {"$set": {"topics": topics}}
     )
