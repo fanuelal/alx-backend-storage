@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Module that inser new document in mongo"""
-import mongo
+import pymongo
 
 
 def insert_school(mongo_collection, **kwargs):
