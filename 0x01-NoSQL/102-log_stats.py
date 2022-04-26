@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module Improve from 12-log_stats.py"""
+"""Print info in a collection"""
 from pymongo import MongoClient
 
 
@@ -26,8 +26,7 @@ if __name__ == "__main__":
             {
                 "_id": "$ip",
                 "count": {"$sum": 1}
-            }
-        },
+            }},
         {"$sort": {"count": -1}},
         {"$limit": 10},
         {"$project": {
