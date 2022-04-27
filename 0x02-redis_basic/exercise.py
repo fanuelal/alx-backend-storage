@@ -6,9 +6,8 @@ import uuid
 
 class Cache:
     """Class of cache """
-    def __int___(self):
+    def __int__(self):
         """constructor store an instance of the redis"""
-
         self._redis = redis.Redis()
         self._redis.flushdb()
 
