@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Module store Redis"""
 import redis
-from import Union, Callable, Optional, Any
-
+from typing import Union, Callable, Optional, Any
+import uuid
 
 class Cache:
     """Class of cache """
-    def __int___():
+    def __int___(self):
         """constructor store an instance of the redis"""
 
         self._redis = redis.Redis()
